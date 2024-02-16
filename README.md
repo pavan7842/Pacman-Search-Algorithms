@@ -1,2 +1,35 @@
-# Pacman-Search-Algorithms
-Embark on an AI journey with A*, A* Life Long, and D* Lite algorithms in Pacman's world. Compare efficiency &amp; performance in dynamic environments. Ideal for AI enthusiasts, students, and researchers seeking insights into search algorithms. Dive into theory, experimentation, and practical applications in AI problem-solving.
+## LPA* and D* Lite Implementation
+
+This repository implements the research paper **"D* Lite"** by Sven Koenig, Maxim Likhachev
+
+The code can be found in [click here](https://github.com/mouryateja95/D-Lite)
+
+In order to see pacman in action, the following are commands for six different mazes:
+```
+python pacman.py -l smallMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+python pacman.py -l mediumMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+python pacman.py -l openMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+python pacman.py -l contoursMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+
+python pacman.py -l smallMaze -z .5 -p SearchAgent -a fn=astarll,heuristic=manhattanHeuristic
+python pacman.py -l mediumMaze -z .5 -p SearchAgent -a fn=astarll,heuristic=manhattanHeuristic
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astarll,heuristic=manhattanHeuristic
+python pacman.py -l openMaze -z .5 -p SearchAgent -a fn=astarll,heuristic=manhattanHeuristic
+python pacman.py -l contoursMaze -z .5 -p SearchAgent -a fn=astarll,heuristic=manhattanHeuristic
+
+python pacman.py -l smallMaze -z .5 -p SearchAgent -a fn=dstar,heuristic=manhattanHeuristic
+python pacman.py -l mediumMaze -z .5 -p SearchAgent -a fn=dstar,heuristic=manhattanHeuristic
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=dstar,heuristic=manhattanHeuristic
+python pacman.py -l openMaze -z .5 -p SearchAgent -a fn=dstar,heuristic=manhattanHeuristic
+python pacman.py -l contoursMaze -z .5 -p SearchAgent -a fn=dstar,heuristic=manhattanHeuristic
+
+```
+You can speed up Pacman by adding ```--frameTime 0``` and to change search strategy change ```fn``` to one of:
+```
+astar ===> aStarSearch
+astarll ===> aStartSearchLifeLong
+dstar ===> dStarSearch
+
+
+Implemented using Python 3.9.7
