@@ -2,8 +2,6 @@
 
 This repository implements the research paper **"D* Lite"** by Sven Koenig, Maxim Likhachev
 
-The code can be found in [click here](https://github.com/mouryateja95/D-Lite)
-
 In order to see pacman in action, the following are commands for six different mazes:
 ```
 python pacman.py -l smallMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
